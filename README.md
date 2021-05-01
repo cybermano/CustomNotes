@@ -30,3 +30,7 @@ Tested on some pw sites (PW 3.0.148 -> 3.0.170) and major debug on local machine
 
 #### Disclaimer
 This is my first "public" module, and most important my first developing work so be careful to use in prod sites: test before on developing or debugging. 
+
+#### Download
+Download the zip ad uncompress into /site/modules/ then refresh your module admin page.
+If you would download the files one by one, put the module into a directory into /site/modules/ and the relative JS into a subfolder with the same name of the JS.
