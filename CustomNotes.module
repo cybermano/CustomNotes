@@ -7,7 +7,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
         'title' => 'CustomNotes',
         'summary' => 'Put your custom notes into an admin page, with some settings to show it.',
         'author' => 'Mauro Romano, NewMediaConsulting',
-        'version' => 100,
+        'version' => 101,
         'permission' => 'view-notes',
         'autoload' => 'template=admin',
         'singular' => true
@@ -21,7 +21,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     $form = $event->return;
     $page = $event->process->getPage();
 
-    if ($this->enable_module == 0){
+    if (!$this->enable_module){
         if ($this->button){
 
         if(!in_array($page->template->id, $this->tpls_sticky)) return;
@@ -44,7 +44,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     $form = $event->return;
     $page = $event->process->getPage();
 
-    if ($this->enable_module == 0){
+    if (!$this->enable_module){
         if ($this->note){
 
             if(!in_array($page->template->id, $this->tpls_note)) return;
@@ -196,7 +196,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     } 
 
     public function __construct() {
-        $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes_JS/CustomNotes.js');
+        $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes.js');
     }
 
 
