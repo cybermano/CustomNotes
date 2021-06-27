@@ -2,7 +2,7 @@ $(document).ready(function(){
     var $form = $("#ModuleEditForm"); 
 
     // Check if $form exist to prevent unespected display behavieours out of the module
-    if (typeof $form[0] !== 'undefined') {
+    if (typeof $form[0] !== 'undefined' && $form.attr('action').match('name=CustomNotes')) {
         // remove scripts, because they've already been executed since we are manipulating the DOM below (WireTabs)
         // which would cause any scripts to get executed twice
         $form.find("script").remove();

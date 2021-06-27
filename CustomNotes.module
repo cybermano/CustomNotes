@@ -14,7 +14,9 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     ];
     }
 
-    public function init() {}
+    public function init() {
+        $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes.js');
+    }
 
     public function ready() {
     $this->addHookAfter("ProcessPageEdit::buildForm", function($event) {
@@ -194,11 +196,6 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     return $out;
 
     } 
-
-    public function __construct() {
-        $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes.js');
-    }
-
 
     public static function getModuleConfigInputfields(array $data) { 
     // JQuery Tab loading
