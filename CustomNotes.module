@@ -15,7 +15,9 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     }
 
     public function init() {
-        $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes.js');
+        if ($this->wire('input')->get->name == 'CustomNotes') {
+            $this->wire('config')->scripts->add(wire('urls')->$this.'CustomNotes.js');
+        }
     }
 
     public function ready() {
