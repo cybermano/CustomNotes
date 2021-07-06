@@ -6,7 +6,7 @@ It works also with multilanguage.
 
 | Date   | Description |
 |--------|-------------|
-| 20210704 | Fix an issue by @teppokoivula (Teppo Koivula) where CustomNotes.js was interfering with unrelated module config screens and PR Merged |
+| 20210704 | Fixed an issue by @teppokoivula (Teppo Koivula) where CustomNotes.js was interfering with unrelated module config screens and PR Merged |
 
 
 ## On Install
