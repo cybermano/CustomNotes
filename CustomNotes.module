@@ -54,7 +54,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
             if(!in_array($page->template->id, $this->tpls_note)) return;
             if(!in_array($page->id, $this->pages_note)) return;
 
-        // @BernhardBaumrock Tip: Adding link into field note. Where it all begins! ;)
+        // @BernhardBaumrock Tip: Adding link into field note. Where it all began! ;)
         foreach ($this->fields_note as $field_note){
             if($f = $form->get($field_note)) {
                 $f->notes  = '';
