@@ -2,6 +2,13 @@
 Processwire module to create a custom notes page into backend.
 It works also with multilanguage.
 
+# Changelogs
+
+| Date   | Description |
+|--------|-------------|
+| 20210704 | Fix an issue by @teppokoivula (Teppo Koivula) where CustomNotes.js was interfering with unrelated module config screens and PR Merged |
+
+
 ## On Install
 1. This module create a page under your admin tree with the "page" parent, with CustomNotes title;
 2. Also create a new permission called **view-notes** that it will be assigned to those not superuser, if you want let them see the notes.
