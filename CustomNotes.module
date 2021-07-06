@@ -6,7 +6,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
     return [
         'title' => 'CustomNotes',
         'summary' => 'Put your custom notes into an admin page, with some settings to show it.',
-        'author' => 'Mauro Romano of NewMediaConsulting.it and Teppo Koivula',
+        'author' => 'Mauro Romano of NewMediaConsulting (newmc.it) and Teppo Koivula',
         'version' => 101,
         'permission' => 'view-notes',
         'autoload' => 'template=admin',
