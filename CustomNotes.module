@@ -588,7 +588,7 @@ class CustomNotes extends Process implements Module, ConfigurableModule {
         $setPos = wire('modules')->get('InputfieldFieldset');
         $setPos->label = __('Button Position');
         $setPos->description = 'CSS rule for positions with percentage values.
-        Verticlas refers to ```div.container```, horizontals refers to ```a.sticky-button```';
+        Verticlas refer to ```div.container```, horizontals refer to ```a.sticky-button```';
         $setPos->collapsed = 1;       
         $setPos->icon = "arrows";
         // $setPos->set("themeColor", "primary");
