@@ -1,2 +1,3 @@
-*.module linguistic-language=PHP linguistic-detectable
+*.module linguistic-language=PHP linguistic-detectable=true
+*.js linguistic-detectable=false
 *.zip linguistic-documentation
