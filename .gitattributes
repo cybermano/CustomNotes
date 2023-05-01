@@ -1,2 +1,2 @@
-*.module linguistic-language=ProcessWire/Php linguistic-detectable
+*.module linguistic-language=PHP linguistic-detectable
 *.zip linguistic-documentation
